@@ -5,6 +5,15 @@
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+  <script>
+    const reloadtButton = document.querySelector("#reload");
+      // Reload everything:
+      function reload() {
+        reload = location.reload();
+      }
+      // Event listeners for reload
+      reloadButton.addEventListener("click", reload, false);
+  </script>
 <h1>BRIAN OTIENO</h1> 
 <a id="about1" href="#about">ABOUT</a> &nbsp;
 <a id="contact1" href="#contact">CONTACT</a> &nbsp;
@@ -62,6 +71,10 @@
     </label></p>
 </section>
 </center>
+<center>
+  <button onClick="window.location.reload();" id="refresh">Refresh </button>
+</center>
+
 
   <!-- <center>   <img src= "ee.jpg" style="width:80%;">  </center><br>– --> 
   
