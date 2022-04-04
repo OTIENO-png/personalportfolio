@@ -1,0 +1,101 @@
+.rectangle{
+  padding-top: 40px;
+    width:100px;
+    height:100px;
+    border:1px solid #000; 
+    position: center;
+    text-align: center;
+  }
+   a:link {
+    color: rgb(106, 218, 32);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  img {
+    color: rgb(106, 218, 32);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:visited {
+    color: rgb(0, 255, 115);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:hover {
+    color: rgb(0, 255, 0);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  body {
+    background-image: url(/assets/imgs/ww.jpg);
+    background-color: #cccccc;
+    color: aqua;
+    background-position: center;
+  }
+  
+  h1 {
+    color: rgb(47, 95, 255);
+    text-align: center;
+  }
+  h2 {
+    color: rgb(18, 19, 20);
+    text-align: center;
+  }
+  
+  p {
+    font-family: verdana;
+    font-size: 20px;
+    color: rgb(14, 14, 15);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+  }
+  fieldset{
+    border-radius: 25px;
+    border-color: blue;
+    border-style: double;
+
+  }
+  legend{
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+    color: black;
+  }
+  button:hover {
+    /*color: red;*/
+    background-color: blueviolet;
+    text-decoration: underline;
+    
+  }
+  button :active{
+    color: rgb(0, 66, 128);
+  }
+  table,th,td {
+    border: 3px solid black;
+    border-collapse: collapse;
+    color: black;
+    text-align: center;
+    /*border-color: blue;*/
+  }
+  .contact{
+    color: black;
+    background-color: blue;
+  }
+  #about1{
+    color:black;
+    font-weight: bolder;
+  }
+  #contact1 {
+    color: black;
+    font-weight: bolder;
+  }
+  #date1 {
+    color: black;
+    font-weight: bolder;
+  }
+  
