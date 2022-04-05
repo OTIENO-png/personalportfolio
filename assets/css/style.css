@@ -32,10 +32,12 @@
     text-decoration: underline;
   }
   body {
-    background-image: url(/assets/imgs/ww.jpg);
+    background-image: url("/download.jpeg"), url("/download.jpeg");
     background-color: #cccccc;
-    color: aqua;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-position: center;
+    background-size: 35cm;
   }
   
   h1 {
