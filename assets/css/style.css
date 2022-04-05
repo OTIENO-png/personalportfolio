@@ -31,15 +31,6 @@
     background-color: transparent;
     text-decoration: underline;
   }
-  body {
-    background-image: url("/download.jpeg"), url("/download.jpeg");
-    background-color: #cccccc;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: 35cm;
-  }
-  
   h1 {
     color: rgb(47, 95, 255);
     text-align: center;
