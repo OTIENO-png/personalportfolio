@@ -104,4 +104,32 @@
       background-color: rgb(21, 255, 0);
       border-radius: 10px;
     }
-  
+    .footer {
+      text-align: center;
+      background-color: rgb(234, 234, 245);
+      background-size: 500px;
+      /* background-position: 5000px;*/
+      font-size: xx-small;
+      float: center;
+      color: black;
+      height: 100%;
+      width: 100%;
+      display: center;
+      justify-content: center;
+      margin-bottom: 15px;
+      padding: 3px;
+    }
+  .header {
+    text-align: center;
+    /*background-color: rgb(234, 234, 245);*/
+    background-size: 50px;
+    /* background-position: 5000px;*/
+    font-size: small;
+    float: center;
+    color: black;
+    height: 50%;
+    width: 100%;
+    display: center;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
