@@ -97,12 +97,12 @@
     align-items: center;
     text-align: center;
     margin: auto;
-    width: 700px;
+    width: 800px;
     border-radius: 35px;
     }
     #refresh{
       background-color: rgb(21, 255, 0);
-      border-radius: 10px;
+      border-radius: 20px;
     }
     .footer {
       text-align: center;
