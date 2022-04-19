@@ -2,12 +2,27 @@
 <html>
 <head>
 </head>
+<!---<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
 <link rel="stylesheet" href="assets/css/style.css">
+<!---<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
 </head>
 <body>
   <style>
+    #contact{
+     background-image: url("download.jpeg");
+     background-repeat: no-repeat;
+     background-position: center;
+    background-size: 35cm;
+   }
+    #form3{
+      background-image: url("img/form.webp");
+    }
+    img{
+      border-radius: 50%;
+    }
      body {
-    background-image: url("download.jpeg"), url("download.jpeg");
+    background-image: url("img/back.avif"), url("img/back.avif");
     background-color: #cccccc;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -34,35 +49,36 @@
 <a id="date1" href="#date">DATE</a>
 </section>
 
-<p id="demo"></p>
-<center>  <img src="assets/imgs/PP.jpg" height ="150" width="150"  alt= "/home/otienobrian/Downloads/PP.jpg">  </center><br>
+
+<center>  <img src="assets/imgs/PP.jpg" height ="200" width="200" alt= "/home/otienobrian/Downloads/PP.jpg">  </center><br>
 <center>
-  <button type="button" onclick="document.getElementById('demo').innerHTML = Date()" style="float:center;">Date and Time button.</button>
+  <button type="button" onclick="document.getElementById('demo').innerHTML = Date()" style="float:center;">Current Date &Time.</button>
+  <p id="demo"></p>
 </center>
 <h2></h2>
 <section id="about" class="about">
   <form>
-    <fieldset>
+    <!---<fieldset>-->
       <legend>ABOUT</legend>
     
       <p>My name is <strong>Brian Otieno Lubalo</strong>,born and raised in Western Kenya but
         currently residing in Nairobi county .
         I started my schooling at a local school called Pan paper primary school from nursery to class four then I proceeded
         to St Joseph primary school still in Western Kenya where I did my class eight. From there I went to St Mathews
-        secondary school Webuye where I studied from form one to form four. I joined the Kisumu national polytechnic where
+        secondary school Webuye where I studied from form one to form four. I joined The Kisumu national polytechnic where
         I’m taking Diploma in Information Technology.Reason for enrolling to Moringa school is because of the passion I do
-        have in programing and I want to learn more about the technology which is changing at a very fast rate.</p>
-    </fieldset>
+        have in programming and I want to learn more about the technology which is changing at a very fast rate.</p>
+    <!---</fieldset>-->
   </form>
   
 </section>
-  <form>
+  <form > 
       <h2>HOBBIES</h2>
       
       <p>My hobbies and interest include; <i>listening to music,watching basketball,playing basketball and just going out
-          to walk</i></p>
+          for walk.</i></p>
   </form>
-  <form>
+  <form id="form3">
     <center>
       <h3>Lists of projects.</h3>
     </center>
@@ -83,15 +99,37 @@
   
  
 <center>
-  <section id="date" class="date"></section>
+  <!---<section id="date" class="date"></section>
   <p><label >Enter date:
     <input type="date" name="date">
     </label></p>
-</section>
+</section>-->
 </center>
-<center>
+<!---<center>
   <button onClick="window.location.reload();" id="refresh">Refresh </button>
 </center>
+<div class="w3-container">
+  <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">social media</button>
+
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id01').style.display='none'"
+          class="w3-button w3-display-topright">&times;</span>
+        <div class="image">
+          <a href="https://www.facebook.com/photo/?fbid=466575017871159&set=a.122907682237896&__cft__[0]=AZUyhGh4nPOXBOXTTwzZ2i6rp_GVvmrkAggRr85qVA-lxJC7vE3poP_ubg6L_l7QJWKRvu9nikuVgBO9uX14eVILjKVcqNnkO_wi9Rzst1Sa08Joypx7ZZJc840fLPtLnio&__tn__=EH-R"
+            type="button" title="facebook"><img src="img/face.jpeg" height="30" width="35"></a>
+          <a href="https://twitter.com/BLOTIENO" type="button" title="twitter"><img src="img/twitter.jpeg" height="30"
+              width="35"></a>
+          <a href="https://www.instagram.com/" type="button" title="instagram "><img src="img/instargram.jpeg" height="30"
+              width="35"></a>
+          <a href="https://www.linkedin.com/in/otieno-l-brian-730703236/?lipi=urn%3Ali%3Apage%3Ad_flagship3_notifications%3Bbxiv%2ByryTc2Ylfgy6RDLJQ%3D%3D"
+            type="button" title="linked "><img src="img/link.png" height="30" width="35"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>-->
 
 
   <!-- <center>   <img src= "ee.jpg" style="width:80%;">  </center><br>– --> 

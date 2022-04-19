@@ -2,7 +2,7 @@
   padding-top: 40px;
     width:100px;
     height:100px;
-    border:1px solid #000; 
+    border:1px solid #000;
     position: center;
     text-align: center;
   }
@@ -39,7 +39,7 @@
     color: rgb(18, 19, 20);
     text-align: center;
   }
-  
+
   p {
     font-family: verdana;
     font-size: 20px;
@@ -63,7 +63,7 @@
     /*color: red;*/
     background-color: blueviolet;
     text-decoration: underline;
-    
+
   }
   button :active{
     color: rgb(0, 66, 128);
@@ -97,7 +97,7 @@
     align-items: center;
     text-align: center;
     margin: auto;
-    width: 400px;
+    width: 700px;
     border-radius: 35px;
     }
     #refresh{
@@ -121,8 +121,8 @@
     }
   .header {
     text-align: center;
-    /*background-color: rgb(234, 234, 245);*/
-    background-size: 50px;
+    /*background-color: grey;*/
+    background-size: 100px;
     /* background-position: 5000px;*/
     font-size: small;
     float: center;
