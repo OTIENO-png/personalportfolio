@@ -9,7 +9,130 @@
 <!---<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
 </head>
 <body>
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  </script>
+
   <style>
+    * {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  padding-top:50px;
+  padding-bottom:100px;
+  padding-right:100px;
+  padding-left:100px;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
     #contact{
      background-image: url("download.jpeg");
      background-repeat: no-repeat;
@@ -19,7 +142,7 @@
     #form3{
       background-image: url("img/form.webp");
     }
-    img{
+    #photo{
       border-radius: 50%;
     }
      body {
@@ -33,6 +156,13 @@
   .image{
     padding: 5px;
   }
+  .slideshow-container{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ /* width: 50%;*/
+}
+  
   </style>
   <script>
     const reloadtButton = document.querySelector("#reload");
@@ -44,31 +174,32 @@
       reloadButton.addEventListener("click", reload, true);
   </script>
 <!--<h1>BRIAN OTIENO</h1> -->
-<section class="header">
+<nav class="navbar">
 <a id="about1" href="#about">ABOUT</a> &nbsp;
 <a id="contact1" href="#contact">CONTACT</a> &nbsp;
 <a id="date1" href="#date">DATE</a>
-</section>
+</nav>
 
 
-<center>  <img src="assets/imgs/PP.jpg" height ="200" width="200" alt= "/home/otienobrian/Downloads/PP.jpg">  </center><br>
+<center>  <img  src="assets/imgs/PP.jpg" height ="200" width="200" alt= "/home/otienobrian/Downloads/PP.jpg">  </center><br>
+
 <center>
+  <b>Brian Otieno Lubalo</b><br>
+  <p>Current student at Moringa School.</p><br><br>
   <button type="button" onclick="document.getElementById('demo').innerHTML = Date()" style="float:center;">Current Date &Time.</button>
   <p id="demo"></p>
+  <center>
+    <button onClick="window.location.reload();" id="refresh">Refresh </button>
+  </center>
 </center>
 <h2></h2>
 <section id="about" class="about">
   <form>
     <!---<fieldset>-->
       <legend>ABOUT</legend>
-    
-      <p>My name is <strong>Brian Otieno Lubalo</strong>,born and raised in Western Kenya but
-        currently residing in Nairobi county .
-        I started my schooling at a local school called Pan paper primary school from nursery to class four then I proceeded
-        to St Joseph primary school still in Western Kenya where I did my class eight. From there I went to St Mathews
-        secondary school Webuye where I studied from form one to form four. I joined The Kisumu national polytechnic where
-        I’m taking Diploma in Information Technology.Reason for enrolling to Moringa school is because of the passion I do
-        have in programming and I want to learn more about the technology which is changing at a very fast rate.</p>
+      <br><br>
+<p>I have a Diploma in Information Technology.The reason for enrolling to Moringa school is because of the passion I have in programming and I want to learn more about the technology which is changing at a very fast rate.</p>
+        <br><br>
     <!---</fieldset>-->
   </form>
   
@@ -76,9 +207,59 @@
   <form > 
       <h2>HOBBIES</h2>
       
-      <p>My hobbies and interest include; <i>listening to music,watching basketball,playing basketball and just going out
-          for walk.</i></p>
+      <p>My hobbies and interest include;listening to music,watching basketball,playing basketball and just going out for walk.</p><br><br>
   </form>
+   <!-- <center>
+      <h3>Lists of projects.</h3>
+      <P>The links of the projects are below:</P>
+    </center>
+  <div class="slideshow-container">
+  
+    <div class="mySlides fade">
+     
+      <img src="/img/one1.jpg" style="width:100%">
+      <div class="text"><li><a href="https://devmiano.github.io/arusi/">Arusi(which I am one of the contributor)</a></li></div>
+    </div>
+  
+    <div class="mySlides fade">
+     
+      <img src="/img/image3.jpeg" style="width:100%" class="center">
+      <div class="text">Caption Two<br><li><a href="https://otieno-png.github.io/createstory/">Fun lines</a></li></div>
+    </div>
+    <br>
+  
+    <div class="mySlides fade">
+     
+      <img src="/img/phot3.avif" style="width:100%">
+      <div class="text">It is a website where clients can order pizaa depending on the qualities and type they want.The order is delivered to
+      them at the comfort of the house with only 200 shillings charged on delivery.<br><li><a href="https://otieno-png.github.io/Luan-pizza/">Luan-pizza</a></li></div>
+    </div>
+    <br>
+  
+    <div class="mySlides fade">
+  
+      <img src="/img/form.webp" style="width:100%">
+      <div class="text"><li></li><a href="https://otieno-png.github.io/">Akan name generator</a></li></div>
+    </div>
+    <br>
+
+    <div class="mySlides fade">
+    
+      <img src="/img/form.webp" style="width:100%">
+      <div class="text"><li><a href="https://otieno-png.github.io/third-independent-project/">Delani studio</a></li></li></div>
+    </div>
+
+  </div>
+  <br>
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+  </div>-->
+
+
   <form id="form3">
     <center>
       <h3>Lists of projects.</h3>
@@ -106,9 +287,7 @@
     </label></p>
 </section>-->
 </center>
-<center>
-  <button onClick="window.location.reload();" id="refresh">Refresh </button>
-</center>
+
 <!---<div class="w3-container">
   <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">social media</button>
 
