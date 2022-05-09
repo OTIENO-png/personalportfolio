@@ -76,22 +76,6 @@
     border-radius: 35px;
     /*border-color: blue;*/
   }
-  .contact{
-    color: black;
-    background-color: blue;
-  }
-  #about1{
-    color:black;
-    font-weight: bolder;
-  }
-  #contact1 {
-    color: black;
-    font-weight: bolder;
-  }
-  #date1 {
-    color: black;
-    font-weight: bolder;
-  }
   form {
     background-color: rgb(55, 55, 114);
     align-items: center;
@@ -286,11 +270,15 @@ img {vertical-align: middle;}
     top: 0;
     left: 0;
     font-family: 'karla';
+  
     }
     
     .navbar a {
     text-decoration: none;
-    color: #d8d8d8;
+    /*color: #d8d8d8;*/
+    color: black;
+    font-weight: bolder;
+    
     }
         .navbar a.nav-logo {
           float: left;
