@@ -203,7 +203,7 @@ img {vertical-align: middle;}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
@@ -247,15 +247,15 @@ img {vertical-align: middle;}
       background-origin: content-box;
       filter: grayscale(1);
       transition-delay: 2.5ms;
-  
+
     }
-  
+
     img:hover {
       filter: grayscale(0);
       transition: 0.5s;
       transition-delay: 20ms;
       cursor: pointer;
-  
+
     }
    .navbar {
     background-color: royalblue;
@@ -270,15 +270,16 @@ img {vertical-align: middle;}
     top: 0;
     left: 0;
     font-family: 'karla';
-  
+    position: fixed;
+
     }
-    
+
     .navbar a {
     text-decoration: none;
     /*color: #d8d8d8;*/
     color: black;
     font-weight: bolder;
-    
+
     }
         .navbar a.nav-logo {
           float: left;
@@ -295,15 +296,15 @@ img {vertical-align: middle;}
                 a:link {
                   text-decoration: none;
                 }
-        
+
                 a:visited {
                   text-decoration: none;
                 }
-        
+
                 a:hover {
                   text-decoration: underline;
                 }
-        
+
                 a:active {
                   text-decoration: underline;
                 }
