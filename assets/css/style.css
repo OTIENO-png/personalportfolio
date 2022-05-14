@@ -299,12 +299,16 @@ img {vertical-align: middle;}
 
                 a:visited {
                   text-decoration: none;
+                  background-color: white;
                 }
 
                 a:hover {
                   text-decoration: underline;
+                  background-color: white;
+
                 }
 
                 a:active {
                   text-decoration: underline;
+
                 }
