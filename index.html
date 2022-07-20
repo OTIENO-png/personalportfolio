@@ -57,7 +57,12 @@
      font-size: 15em;
    }*/
     #form3{
-      background-image: url("img/form.webp");
+    background-image: url("img/form.webp");
+    background-position: center;
+    position: relative;
+    /*height: 100vh;*/
+    width: 100%;
+    background-size: cover;
     }
     #photo{
       border-radius: 50%;
@@ -97,7 +102,9 @@ p{
   --title: 'Playfair Display', serif;
   --text: 'Urbanist', sans-serif;
 }
-
+#projects{
+  border-radius: 50%;
+}
   </style>
   <script>
     const reloadtButton = document.querySelector("#reload");
@@ -110,20 +117,10 @@ p{
   </script>
 <!--<h1>BRIAN OTIENO</h1> -->
 <img  id="image" src="assets/imgs/6066.png" >
-<nav class="navbar">
-  
-  <a id="about1" href="#about">ABOUT</a> &nbsp;
-  <!-- <a id="contact1" href="#contact">CONTACT</a> &nbsp;
-<a id="date1" href="#date">DATE</a>&nbsp; -->
-  <a id="experience1" href="exp.html">EXPERIENCE</a>&nbsp;
-  <a id="resume1" href="resume.html">RESUME</a>
-  <!--<span class="close">&times</span>-->
- 
-</nav>
+
 
 <center>
-  <b>Brian Otieno Lubalo</b><br>
-  <p>Current student at Moringa School.</p><br><br>
+  <b>Brian Otieno Lubalo</b><br><br>
   <button type="button" onclick="document.getElementById('demo').innerHTML = Date()" style="float:center;">Current Date &Time.</button>
   <p id="demo"></p>
   <center>
@@ -205,16 +202,22 @@ specifically for the chance to challenge myself since the technology field is so
     </center>
 
     <P>The links of the projects are below:</P>
-      <center>
-        <ul>
+    
+        <ul >
+          
+        <img src="assets/imgs/hero.png"  id="projects" width="100" height="100">
           <li><a href="https://devmiano.github.io/arusi/">Arusi(which I am one of the contributor)</a><br></li>
-         <li><a href="https://otieno-png.github.io/Luan-pizza/">Luan-pizza</a><br></li>
-          <li><a href="https://otieno-png.github.io/createstory/">Fun lines</a><br></li>
+        <img src="assets/imgs/pizza.jpeg" id="projects"  width="100" height="100">
+         <li><a href="https://otieno-png.github.io/Luan-pizza/">Luan-pizza</a></li>
+        <img src="assets/imgs/ee.jpg" id="projects"  width="100" height="100">
+          <li><a href="https://otieno-png.github.io/createstory/">Fun lines</a></li>
+        <img src="assets/imgs/afr.jpg"id="projects"  width="100" height="100">
           <li><a href="https://otieno-png.github.io/">Akan name generator</a><br></li>
+        <img src="assets/imgs/work7.jpg" id="projects"  width="100" height="100">
           <li><a href="https://otieno-png.github.io/delanistudio/">Delani studio</a><br></li>
         </ul>
 
-      </center>
+      
 
 </form>
 
@@ -286,5 +289,15 @@ specifically for the chance to challenge myself since the technology field is so
   <section class="footer">
     <p1 class="footer">COPYRIGHT © OTIENO.L BRIAN 2022. ALL RIGHTS RESERVED</p1>
   </section>
+  <nav class="navbar">
+  
+    <a id="about1" href="#about">ABOUT</a> &nbsp;
+    <!-- <a id="contact1" href="#contact">CONTACT</a> &nbsp;
+  <a id="date1" href="#date">DATE</a>&nbsp; -->
+    <a id="experience1" href="exp.html">EXPERIENCE</a>&nbsp;
+    <a id="resume1" href="resume.html">RESUME</a>
+    <!--<span class="close">&times</span>-->
+  
+  </nav>
 </body>
 </html>
