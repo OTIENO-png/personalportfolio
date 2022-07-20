@@ -64,21 +64,25 @@
     }
      body {
     background-image: url("img/back.avif"), url("img/back.avif");
-    background-color: #cccccc;
+    background-color:black;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: 35cm;
   }
-  .image{
+  /* .image{
     padding: 5px;
-  }
+  }*/
   #image{
-    padding-left: 50px;
+    background-position: center;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+   /*  padding-left: 50px;
     padding-right: 50px;
     padding-top: 50px;
-    padding-bottom: 50px;
-  }
+    padding-bottom: 50px;*/
+  } 
   .slideshow-container{
   display: block;
   margin-left: auto;
@@ -105,17 +109,17 @@ p{
       reloadButton.addEventListener("click", reload, true);
   </script>
 <!--<h1>BRIAN OTIENO</h1> -->
+<img  id="image" src="assets/imgs/6066.png" >
 <nav class="navbar">
-<a id="about1" href="#about">ABOUT</a> &nbsp;
-<!-- <a id="contact1" href="#contact">CONTACT</a> &nbsp;
+  
+  <a id="about1" href="#about">ABOUT</a> &nbsp;
+  <!-- <a id="contact1" href="#contact">CONTACT</a> &nbsp;
 <a id="date1" href="#date">DATE</a>&nbsp; -->
-<a id="experience1" href="exp.html">EXPERIENCE</a>&nbsp;
-<a id="resume1" href="resume.html">RESUME</a>
-<!--<span class="close">&times</span>-->
+  <a id="experience1" href="exp.html">EXPERIENCE</a>&nbsp;
+  <a id="resume1" href="resume.html">RESUME</a>
+  <!--<span class="close">&times</span>-->
+ 
 </nav>
-
-
-<center><img  id="image" src="assets/imgs/PP.jpg" height ="200" width="200" alt= "/home/otienobrian/Downloads/PP.jpg"></center><br>
 
 <center>
   <b>Brian Otieno Lubalo</b><br>

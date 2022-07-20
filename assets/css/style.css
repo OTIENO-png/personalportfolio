@@ -180,37 +180,6 @@ img {vertical-align: middle;}
   top: 0;
 }
 
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
     #contact{
      background-image: url("download.jpeg");
      background-repeat: no-repeat;
@@ -238,13 +207,13 @@ img {vertical-align: middle;}
       margin-top: 80px;
       margin-left: 1760x;
     /* width: 70%;
-      height: 70%;*/
+      height: 70%;
       border-bottom-right-radius: 10pt;
       border-bottom-left-radius: 15pt;
       border-top-left-radius: 15pt;
       border-top-right-radius: 15pt;
       border-bottom-color: #487575;
-      background-origin: content-box;
+      background-origin: content-box;*/
       filter: grayscale(1);
       transition-delay: 2.5ms;
 
@@ -301,7 +270,6 @@ img {vertical-align: middle;}
                   text-decoration: none;
                   background-color: white;
                 }
-
                 a:hover {
                   text-decoration: underline;
                   background-color: white;
@@ -310,5 +278,4 @@ img {vertical-align: middle;}
 
                 a:active {
                   text-decoration: underline;
-
                 }
